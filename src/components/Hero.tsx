@@ -26,13 +26,7 @@ const Hero = () => {
       <nav className="fixed top-0 left-0 right-0 z-50 glass-strong">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3 h-12 overflow-visible">
-              <img src={logoImage} alt="The Tutors Logo" className="h-16 w-auto scale-x-125 origin-left" />
-              <div className="flex flex-col">
-                <span className="text-lg font-bold text-foreground leading-tight">THE TUTORS</span>
-                <span className="text-xs text-muted-foreground leading-tight">UK Education Consultants</span>
-              </div>
-            </div>
+            <img src={logoImage} alt="The Tutors Logo" className="h-12 w-auto" />
             <div className="flex gap-8 items-center">
               <button
                 onClick={() => scrollToSection("home")}
