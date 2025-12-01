@@ -28,7 +28,7 @@ const Contact = () => {
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* Contact Information */}
           <div className="glass rounded-3xl p-8 space-y-8">
-            <div className="flex items-start gap-4">
+            <div className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-4">
               <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center flex-shrink-0">
                 <Phone className="w-6 h-6 text-white" />
               </div>
@@ -43,7 +43,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
+            <div className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-4">
               <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center flex-shrink-0">
                 <MapPin className="w-6 h-6 text-white" />
               </div>
@@ -58,15 +58,15 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
+            <div className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-4">
               <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center flex-shrink-0">
                 <Clock className="w-6 h-6 text-white" />
               </div>
-              <div>
+              <div className="w-full">
                 <h3 className="font-semibold text-lg mb-3 text-foreground">Opening Hours</h3>
                 <div className="space-y-2">
                   {openingHours.map((schedule, index) => (
-                    <div key={index} className="flex justify-between text-sm">
+                    <div key={index} className="flex justify-between text-sm max-w-xs mx-auto md:mx-0">
                       <span className="text-muted-foreground">{schedule.day}</span>
                       <span className="text-foreground font-medium">{schedule.hours}</span>
                     </div>

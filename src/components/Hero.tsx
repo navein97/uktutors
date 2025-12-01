@@ -29,8 +29,8 @@ const Hero = () => {
             <div className="flex items-center gap-3 h-12 overflow-visible">
               <img src={logoImage} alt="The Tutors Logo" className="h-16 w-auto scale-x-125 origin-left" />
               <div className="flex flex-col">
-                <span className="text-lg font-bold text-foreground leading-tight">THE TUTORS</span>
-                <span className="text-xs text-muted-foreground leading-tight">UK Education Consultants</span>
+                <span className="text-lg font-bold text-foreground leading-tight hidden md:block">THE TUTORS</span>
+                <span className="text-xs text-muted-foreground leading-tight hidden md:block">UK Education Consultants</span>
               </div>
             </div>
             <div className="flex gap-8 items-center">
